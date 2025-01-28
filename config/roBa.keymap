@@ -96,10 +96,10 @@
 
         ARROW {
             bindings = <
-&trans                &kp F7  &kp F8  &kp F9  &kp F12                             &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
-&kp LS(LG(NUMBER_4))  &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans         &kp LS(LG(NUMBER_4))    &kp LA(LG(G))           &kp LC(L)             &kp LS(LA(LG(G)))        &trans
-&kp K_LOCK            &kp F1  &kp F2  &kp F3  &kp F10  &trans      &trans         &trans                  &trans                  &trans                &trans                   &trans
-&trans                &trans  &trans  &trans  &trans   &trans      &kp LG(LS(T))  &trans                                                                                         &trans
+&trans                &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
+&kp LS(LG(NUMBER_4))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &trans         &kp LS(LG(NUMBER_4))    &kp LA(LG(G))           &kp LC(L)             &kp LS(LA(LG(G)))        &trans
+&kp K_LOCK            &kp F1  &kp F2  &kp F3  &kp F10  &trans           &trans         &trans                  &trans                  &trans                &trans                   &trans
+&trans                &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
