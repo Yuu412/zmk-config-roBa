@@ -81,7 +81,7 @@
 &kp LG(V)        &kp N7        &kp N8        &kp N9        &kp LS(LG(Z))                      &kp RG(R)                 &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &mkp MB3
 &kp LG(C)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LG(Z)      &trans      &trans  &mkp MB5                  &mkp LCLK           &kp UP_ARROW      &mkp MB2             &trans
 &mt LEFT_WIN N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LG(A)      &trans      &trans  &mkp MB4                  &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &trans
-&kp LEFT_ALT     &trans        &trans        &trans        &trans         &trans      &trans  &mt RIGHT_WIN LANGUAGE_2                                                             &trans
+&kp LEFT_ALT     &trans        &trans        &trans        &trans         &trans      &trans  &mt RIGHT_WIN LANGUAGE_1                                                             &trans
             >;
         };
 
