@@ -116,10 +116,10 @@
 
         win-default {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp Q            &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&kp A            &kp S   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&mt RS(LCTRL) Z  &kp X   &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
@@ -132,7 +132,7 @@
             >;
         };
 
-        win-NUM {
+        win-SYMBOL {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -141,7 +141,7 @@
             >;
         };
 
-        win-SYMBOL {
+        win-FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
