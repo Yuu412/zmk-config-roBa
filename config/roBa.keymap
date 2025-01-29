@@ -116,9 +116,9 @@
 
         win-default {
             bindings = <
-&kp Q            &kp W         &kp E         &kp R                   &kp T                       &trans  &trans  &trans  &trans  &trans
-&kp A            &kp S         &kp D         &kp F                   &kp G   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&mt RS(LCTRL) Z  &kp X         &kp C         &kp V                   &kp B   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp Q            &kp W         &kp E         &kp R                   &kp T                       &kp Y   &trans  &trans  &trans  &trans
+&kp A            &kp S         &kp D         &kp F                   &kp G   &trans      &trans  &kp H   &trans  &trans  &trans  &trans
+&mt RS(LCTRL) Z  &kp X         &kp C         &kp V                   &kp B   &trans      &trans  &kp N   &kp M   &trans  &trans  &trans
 &kp LCTRL        &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 1 SPACE  &trans  &trans      &trans  &trans                          &trans
             >;
         };
