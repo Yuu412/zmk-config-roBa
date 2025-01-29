@@ -87,10 +87,10 @@
 
         mac-SYMBOL {
             bindings = <
-&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp PLUS                        &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL   &trans      &trans  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
-&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp PERIOD  &trans      &trans  &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT        &kp DOUBLE_QUOTES
-&trans       &trans         &trans         &trans     &trans      &trans      &trans  &trans                                                                 &kp PIPE
+&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp PLUS                          &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
+&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
+&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &trans  &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT        &kp DOUBLE_QUOTES
+&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                                 &kp PIPE
             >;
         };
 
