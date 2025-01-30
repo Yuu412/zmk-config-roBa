@@ -150,10 +150,10 @@
 
         win-NUM {
             bindings = <
-&kp LC(V)     &kp N7        &kp N8        &kp N9        &kp LS(LC(Z))                                  &kp RC(R)                     &kp RC(RG(LEFT_ARROW))  &kp LG(TAB)     &kp RG(RC(RIGHT_ARROW))  &kp RC(F4)
-&kp LC(C)     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(Z)      &none                   &none   &mkp MB5                      &mkp MB1                &kp UP_ARROW    &mkp MB2                 &trans
-&mt LCTRL N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(A)      &bluetooth_for_mac      &trans  &mkp MB4                      &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &trans
-&trans        &trans        &trans        &trans        &trans         &trans                  &trans  &mt RC(RIGHT_WIN) LANGUAGE_1                                                                   &trans
+&kp LC(V)     &kp N7        &kp N8        &kp N9        &kp LS(LC(Z))                                  &kp RC(R)                     &kp RC(RG(LEFT))  &kp LG(TAB)     &kp RG(RC(RIGHT_ARROW))  &kp RC(F4)
+&kp LC(C)     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(Z)      &none                   &none   &mkp MB5                      &mkp MB1          &kp UP_ARROW    &mkp MB2                 &trans
+&mt LCTRL N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(A)      &bluetooth_for_mac      &trans  &mkp MB4                      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW          &trans
+&trans        &trans        &trans        &trans        &trans         &trans                  &trans  &mt RC(RIGHT_WIN) LANGUAGE_1                                                             &trans
             >;
         };
 
