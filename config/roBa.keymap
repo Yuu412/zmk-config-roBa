@@ -95,7 +95,7 @@
         mac-NUM {
             bindings = <
 &kp LG(V)        &kp N7        &kp N8        &kp N9        &kp LS(LG(Z))                                        &kp RG(R)                 &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &mkp MB3
-&kp LG(C)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LG(Z)      &bt BT_SEL 1            &bt BT_SEL 0  &kp K_NEXT                &mkp MB1            &kp UP_ARROW      &mkp MB2             &trans
+&kp LG(C)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LG(Z)      &bluetooth_for_mac      &bt BT_SEL 0  &kp K_NEXT                &mkp MB1            &kp UP_ARROW      &mkp MB2             &trans
 &mt LEFT_WIN N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LG(A)      &bluetooth_for_win      &trans        &kp K_BACK                &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &trans
 &kp LEFT_ALT     &trans        &trans        &trans        &trans         &trans                  &trans        &mt RIGHT_WIN LANGUAGE_1                                                             &trans
             >;
@@ -132,17 +132,17 @@
 
         win-default {
             bindings = <
-&kp Q            &kp W         &kp E         &kp R                   &kp T                                   &kp Y   &kp U  &kp I      &kp O       &kp P
-&kp A            &kp S         &kp D         &kp F                   &kp G   &bluetooth_for_mac      &trans  &kp H   &kp J  &kp K      &kp L       &lt 1 ENTER
-&mt RS(LCTRL) Z  &kp X         &kp C         &kp V                   &kp X   &trans                  &trans  &kp N   &kp M  &kp COMMA  &kp PERIOD  &kp RIGHT_SHIFT
-&kp LCTRL        &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 SPACE  &trans  &trans                  &trans  &trans                                &lt 2 ESCAPE
+&kp Q            &kp W         &kp E         &kp R                   &kp T                       &kp Y   &kp U  &kp I      &kp O       &kp P
+&kp A            &kp S         &kp D         &kp F                   &kp G   &none       &trans  &kp H   &kp J  &kp K      &kp L       &lt 1 ENTER
+&mt RS(LCTRL) Z  &kp X         &kp C         &kp V                   &kp X   &trans      &trans  &kp N   &kp M  &kp COMMA  &kp PERIOD  &kp RIGHT_SHIFT
+&kp LCTRL        &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 SPACE  &trans  &trans      &trans  &trans                                &lt 2 ESCAPE
             >;
         };
 
         layer_11 {
             bindings = <
 &kp LG(V)        &kp N7        &kp N8        &kp N9        &kp LS(LG(Z))                                        &kp RG(R)                 &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &mkp MB3
-&kp LG(C)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LG(Z)      &bt BT_SEL 1            &bt BT_SEL 0  &kp K_NEXT                &mkp MB1            &kp UP_ARROW      &mkp MB2             &trans
+&kp LG(C)        &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LG(Z)      &bluetooth_for_mac      &bt BT_SEL 0  &kp K_NEXT                &mkp MB1            &kp UP_ARROW      &mkp MB2             &trans
 &mt LEFT_WIN N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LG(A)      &bluetooth_for_win      &trans        &kp K_BACK                &kp LEFT_ARROW      &kp DOWN_ARROW    &kp RIGHT_ARROW      &trans
 &kp LEFT_ALT     &trans        &trans        &trans        &trans         &trans                  &trans        &mt RIGHT_WIN LANGUAGE_1                                                             &trans
             >;
