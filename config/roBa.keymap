@@ -103,10 +103,10 @@
 
         mac-SYMBOL {
             bindings = <
-&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp PLUS                          &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
+&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp PLUS                          &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
 &kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
 &kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &trans  &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT        &kp DOUBLE_QUOTES
-&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                                 &kp PIPE
+&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                                 &trans
             >;
         };
 
@@ -152,10 +152,10 @@
 
         win-SYMBOL {
             bindings = <
-&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp PLUS                          &trans     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
-&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &trans  &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT        &kp DOUBLE_QUOTES
-&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                                 &kp PIPE
+&kp LS(N5)        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)      &kp CARET     &kp LS(EQUAL)                      &kp LS(COMMA)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
+&kp SLASH         &kp LS(NUMBER_3)  &kp LS(SINGLE_QUOTE)  &kp LS(SEMI)  &kp LS(MINUS)  &trans      &trans  &kp MINUS      &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp COLON
+&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)     &kp EXCL      &kp QUESTION   &trans      &trans  &kp LS(MINUS)  &kp LEFT_BRACKET       &kp RIGHT_BRACKET         &kp SQT         &kp DOUBLE_QUOTES
+&trans            &trans            &trans                &trans        &trans         &trans      &trans  &trans                                                                          &trans
             >;
         };
 
