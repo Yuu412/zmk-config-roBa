@@ -65,6 +65,13 @@
 
             label = "BLUETOOTH_FOR_MAC";
         };
+
+        win_ps: win_ps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(B) &kp N5 &kp E &kp D &kp E &kp N6 &kp N4 &kp D &kp D &kp C>;
+            label = "WIN_PS";
+        };
     };
 
     behaviors {
@@ -132,10 +139,10 @@
 
         win-default {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R                   &kp T                                 &kp Y                 &kp U  &lt 0 I    &kp O    &kp P
-&kp A        &kp S         &kp D         &kp F                   &kp G      &none       &trans         &kp H                 &kp J  &kp K      &kp L    &lt 6 ENTER
-&mt LCTRL Z  &kp X         &kp C         &kp V                   &kp B      &trans      &trans         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 SPACE  &lt 7 TAB  &mo 8       &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 8 ESCAPE
+&kp Q        &kp W         &kp E         &kp R                   &kp T                                &kp Y                 &kp U  &lt 0 I    &kp O    &kp P
+&kp A        &kp S         &kp D         &kp F                   &kp G      &none      &trans         &kp H                 &kp J  &kp K      &kp L    &lt 6 ENTER
+&mt LCTRL Z  &kp X         &kp C         &kp V                   &kp B      &to 9      &trans         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 SPACE  &lt 7 TAB  &mo 8      &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 8 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -161,21 +168,21 @@
 
         win-FUNCTION {
             bindings = <
-&trans                &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
-&kp LS(LG(NUMBER_4))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(NUMBER_4))    &kp LA(LG(G))           &kp LC(L)             &kp LS(LA(LG(G)))        &trans
-&kp K_LOCK            &kp F1  &kp F2  &kp F3  &kp F10  &trans           &trans         &trans                  &trans                  &trans                &trans                   &trans
-&trans                &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &trans
+&win_ps             &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans
+&kp LC(LA(DELETE))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(NUMBER_4))    &none                   &kp LA(L)             &none                    &trans
+&kp LG(L)           &kp F1  &kp F2  &kp F3  &kp F10  &trans           &trans         &trans                  &trans                  &trans                &trans                   &kp RSHIFT
+&trans              &trans  &trans  &trans  &trans   &trans           &kp LS(LC(T))  &trans                                                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        layer_9 {
+        win-GWS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans                &trans                &trans                &trans                      &trans  &trans         &trans  &trans             &trans
+&trans  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &trans                &trans  &trans      &trans  &trans  &kp LA(LC(G))  &trans  &kp LA(LC(LS(G)))  &trans
+&trans  &kp LA(LC(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans  &trans      &trans  &trans  &trans         &trans  &trans             &trans
+&trans  &trans                &trans                &trans                &trans  &trans      &trans  &trans                                            &trans
             >;
         };
 
