@@ -110,10 +110,10 @@
 
         mac-SYMBOL {
             bindings = <
-&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp PLUS                          &none      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp COLON
-&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &trans  &kp UNDER  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT        &kp DOUBLE_QUOTES
-&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                                 &trans
+&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp TILDE                         &kp LESS_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN  &none
+&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
+&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &trans  &kp UNDER      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES
+&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                                        &trans
             >;
         };
 
@@ -121,7 +121,7 @@
             bindings = <
 &trans                &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
 &kp LS(LG(NUMBER_4))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(NUMBER_4))    &kp LA(LG(G))           &kp LC(L)             &kp LS(LA(LG(G)))        &trans
-&kp K_LOCK            &kp F1  &kp F2  &kp F3  &kp F10  &trans           &trans         &trans                  &trans                  &trans                &trans                   &trans
+&none                 &kp F1  &kp F2  &kp F3  &kp F10  &trans           &trans         &trans                  &trans                  &trans                &trans                   &trans
 &trans                &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &trans
             >;
 
@@ -159,10 +159,10 @@
 
         win-SYMBOL {
             bindings = <
-&kp LS(N5)        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)      &kp CARET     &kp LS(EQUAL)                      &kp LS(COMMA)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
-&kp SLASH         &kp LS(NUMBER_3)  &kp LS(SINGLE_QUOTE)  &kp LS(SEMI)  &kp LS(MINUS)  &trans      &trans  &kp MINUS      &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp COLON
-&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)     &kp EXCL      &kp QUESTION   &trans      &trans  &kp LS(MINUS)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
-&trans            &trans            &trans                &trans        &trans         &trans      &trans  &trans                                                                          &trans
+&kp LS(N5)            &kp LS(NUMBER_4)  &kp CARET          &kp LS(MINUS)  &kp LS(EQUAL)                      &kp LS(COMMA)      &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
+&kp SLASH             &kp LS(NUMBER_3)  &kp COLON          &kp LS(SEMI)   &kp MINUS      &trans      &trans  &kp MINUS          &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp ASTERISK
+&kp LS(LEFT_BRACKET)  &kp PLUS          &kp LS(BACKSLASH)  &kp EXCL       &kp QUESTION   &trans      &trans  &kp LS(BACKSLASH)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
+&trans                &trans            &trans             &trans         &trans         &trans      &trans  &trans                                                                              &trans
             >;
         };
 
