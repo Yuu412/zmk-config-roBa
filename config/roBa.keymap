@@ -139,7 +139,7 @@
 
         win-default {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R                   &kp T                                &kp Y                 &kp U  &lt 0 I    &kp O    &kp P
+&kp Q        &kp W         &kp E         &kp R                   &kp T                                &kp Y                 &kp U  &kp I      &kp O    &kp P
 &kp A        &kp S         &kp D         &kp F                   &kp G      &none      &trans         &kp H                 &kp J  &kp K      &kp L    &lt 6 ENTER
 &mt LCTRL Z  &kp X         &kp C         &kp V                   &kp B      &to 9      &trans         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
 &kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt_to_layer_0 6 SPACE  &lt 7 TAB  &mo 8      &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 8 ESCAPE
@@ -150,10 +150,10 @@
 
         win-NUM {
             bindings = <
-&kp LC(V)     &kp N7        &kp N8        &kp N9        &kp LS(LC(Z))                                  &kp RC(R)                     &kp RG(RC(LEFT_ARROW))  &kp RG(RA(TAB))  &kp RG(RC(RIGHT_ARROW))  &kp RC(F4)
-&kp LC(C)     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(Z)      &none                   &none   &mkp MB5                      &mkp MB1                &kp UP_ARROW     &mkp MB2                 &trans
-&mt LCTRL N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(A)      &bluetooth_for_mac      &trans  &mkp MB4                      &kp LEFT_ARROW          &kp DOWN_ARROW   &kp RIGHT_ARROW          &trans
-&trans        &trans        &trans        &trans        &trans         &trans                  &trans  &mt RC(RIGHT_WIN) LANGUAGE_1                                                                    &trans
+&kp LC(V)     &kp N7        &kp N8        &kp N9        &kp LS(LC(Z))                                  &kp RC(R)                     &kp RC(RG(LEFT_ARROW))  &kp LG(TAB)     &kp RG(RC(RIGHT_ARROW))  &kp RC(F4)
+&kp LC(C)     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(Z)      &none                   &none   &mkp MB5                      &mkp MB1                &kp UP_ARROW    &mkp MB2                 &trans
+&mt LCTRL N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(A)      &bluetooth_for_mac      &trans  &mkp MB4                      &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &trans
+&trans        &trans        &trans        &trans        &trans         &trans                  &trans  &mt RC(RIGHT_WIN) LANGUAGE_1                                                                   &trans
             >;
         };
 
@@ -168,10 +168,10 @@
 
         win-FUNCTION {
             bindings = <
-&win_ps             &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &trans
-&kp LC(LA(DELETE))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(NUMBER_4))    &none                   &kp LA(L)             &none                    &trans
-&kp LG(L)           &kp F1  &kp F2  &kp F3  &kp F10  &trans           &trans         &trans                  &trans                  &trans                &trans                   &kp RSHIFT
-&trans              &trans  &trans  &trans  &trans   &trans           &kp LS(LC(T))  &trans                                                                                         &trans
+&win_ps             &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LC(PERIOD))  &kp LA(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LA(LG(RIGHT_ARROW))  &trans
+&kp LC(LA(DELETE))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(S))       &none                   &kp LA(L)    &none                    &trans
+&kp LG(L)           &kp F1  &kp F2  &kp F3  &kp F10  &trans           &trans         &trans              &trans                  &trans       &trans                   &kp RSHIFT
+&trans              &trans  &trans  &trans  &trans   &trans           &kp LS(LC(T))  &trans                                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
