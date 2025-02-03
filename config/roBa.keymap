@@ -139,10 +139,10 @@
 
         win-default {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R        &kp T                                        &kp Y                 &kp U  &kp I      &kp O    &kp P
-&kp A        &kp S         &kp D         &kp F        &kp G       &none             &trans         &kp H                 &kp J  &kp K      &kp L    &lt 6 ENTER
-&mt LCTRL Z  &kp X         &kp C         &kp V        &kp B       &mo 9             &kp N5         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt 6 SPACE  &lt 11 TAB  &lt 8 K_LOCK      &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 8 ESCAPE
+&kp Q        &kp W         &kp E         &kp R        &kp T                                       &kp Y                 &kp U  &kp I      &kp O    &kp P
+&kp A        &kp S         &kp D         &kp F        &kp G      &mo 11            &trans         &kp H                 &kp J  &kp K      &kp L    &lt 6 ENTER
+&mt LCTRL Z  &kp X         &kp C         &kp V        &kp B      &mo 9             &kp N5         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt 6 SPACE  &lt 7 TAB  &lt 8 K_LOCK      &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 8 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -157,12 +157,12 @@
             >;
         };
 
-        win-SYMBOL {
+        win-SYMBOL-jis {
             bindings = <
-&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp TILDE                         &kp LESS_THAN  &kp LBRC  &kp RIGHT_BRACE        &kp GREATER_THAN  &none
-&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS      &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
-&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &kp N7  &kp UNDER      &kp LBKT  &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES
-&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                            &trans
+&kp LS(N5)        &kp LS(NUMBER_4)   &kp CARET          &kp MINUS     &kp LS(EQUAL)                      &kp LS(COMMA)      &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
+&kp SLASH         &kp LS(SEMICOLON)  &kp COLON          &kp LS(SEMI)  &kp LS(MINUS)  &trans      &trans  &kp MINUS          &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp SINGLE_QUOTE
+&kp LEFT_BRACKET  &kp BACKSLASH      &kp LS(BACKSLASH)  &kp EXCL      &kp QUESTION   &trans      &kp N7  &kp LS(BACKSLASH)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
+&trans            &trans             &trans             &trans        &trans         &trans      &trans  &trans                                                                              &trans
             >;
         };
 
@@ -195,12 +195,12 @@
             >;
         };
 
-        win-SYMBOL-jis {
+        win-SYMBOL-us {
             bindings = <
-&kp LS(N5)        &kp LS(NUMBER_4)   &kp CARET          &kp MINUS     &kp LS(EQUAL)                      &kp LS(COMMA)      &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
-&kp SLASH         &kp LS(SEMICOLON)  &kp COLON          &kp LS(SEMI)  &kp LS(MINUS)  &trans      &trans  &kp MINUS          &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp SINGLE_QUOTE
-&kp LEFT_BRACKET  &kp BACKSLASH      &kp LS(BACKSLASH)  &kp EXCL      &kp QUESTION   &trans      &kp N7  &kp LS(BACKSLASH)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
-&trans            &trans             &trans             &trans        &trans         &trans      &trans  &trans                                                                              &trans
+&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp TILDE                         &kp LESS_THAN  &kp LBRC  &kp RIGHT_BRACE        &kp GREATER_THAN  &none
+&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS      &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
+&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &kp N7  &kp UNDER      &kp LBKT  &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES
+&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                            &trans
             >;
         };
     };
