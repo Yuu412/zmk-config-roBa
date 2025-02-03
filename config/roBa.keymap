@@ -197,10 +197,10 @@
 
         win-SYMBOL-us {
             bindings = <
-&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp TILDE                         &kp LESS_THAN  &kp LBRC  &kp RIGHT_BRACE        &kp GREATER_THAN  &none
-&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS      &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
-&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &kp N7  &kp UNDER      &kp LBKT  &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES
-&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                            &trans
+&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp TILDE                            &kp LESS_THAN  &kp LBRC  &kp RIGHT_BRACE        &kp GREATER_THAN  &none
+&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans     &kp MINUS      &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
+&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &kp RS(D)  &kp UNDER      &kp LBKT  &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES
+&trans       &trans         &trans         &trans     &trans        &trans      &trans     &trans                                                            &trans
             >;
         };
     };
