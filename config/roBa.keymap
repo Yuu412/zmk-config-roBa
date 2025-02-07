@@ -53,7 +53,7 @@
         bluetooth_for_win: bluetooth_for_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 10>, <&to 5>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 100>, <&to 5>;
 
             label = "BLUETOOTH_FOR_WIN";
         };
@@ -61,7 +61,7 @@
         bluetooth_for_mac: bluetooth_for_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&macro_wait_time 10>, <&to 0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 100>, <&to 0>;
 
             label = "BLUETOOTH_FOR_MAC";
         };
@@ -159,10 +159,10 @@
 
         win-SYMBOL-jis {
             bindings = <
-&kp LS(N5)        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)   &kp MINUS  &kp LS(EQUAL)                      &kp LS(COMMA)      &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
-&kp SLASH         &kp HASH          &kp DOUBLE_QUOTES  &kp COLON  &kp LS(MINUS)  &none       &trans  &kp MINUS          &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp SINGLE_QUOTE
-&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp EXCL   &kp QUESTION   &none       &kp N7  &kp LS(BACKSLASH)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
-&trans            &trans            &trans             &trans     &trans         &trans      &trans  &trans                                                                              &trans
+&kp LS(N5)        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)   &kp MINUS  &kp LS(EQUAL)                      &kp LS(COMMA)   &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
+&kp SLASH         &kp HASH          &kp DOUBLE_QUOTES  &kp COLON  &kp LS(MINUS)  &none       &trans  &kp MINUS       &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp SINGLE_QUOTE
+&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp EXCL   &kp QUESTION   &none       &kp N7  &kp UNDERSCORE  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
+&trans            &trans            &trans             &trans     &trans         &trans      &trans  &trans                                                                           &trans
             >;
         };
 
