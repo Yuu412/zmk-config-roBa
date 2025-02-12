@@ -72,6 +72,13 @@
             bindings = <&none &kp LS(B) &kp N5 &kp E &kp D &kp E &kp N6 &kp N4 &kp D &kp D &kp C>;
             label = "WIN_PS";
         };
+
+        win_gslide_group: win_gslide_group {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LCTRL &kp LA(G)>;
+            label = "WIN_GSLIDE_GROUP";
+        };
     };
 
     behaviors {
@@ -159,10 +166,10 @@
 
         win-SYMBOL-jis {
             bindings = <
-&kp LS(N5)        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)   &kp MINUS  &kp LS(EQUAL)                      &kp LS(COMMA)   &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
-&kp SLASH         &kp HASH          &kp DOUBLE_QUOTES  &kp COLON  &kp LS(MINUS)  &none       &trans  &kp MINUS       &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp SINGLE_QUOTE
-&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp EXCL   &kp QUESTION   &none       &kp N7  &kp UNDERSCORE  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
-&trans            &trans            &trans             &trans     &trans         &trans      &trans  &trans                                                                           &trans
+&kp LS(N5)        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)   &kp MINUS  &kp LS(EQUAL)                      &kp LS(COMMA)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
+&kp SLASH         &kp HASH          &kp DOUBLE_QUOTES  &kp COLON  &kp LS(MINUS)  &none       &trans  &kp MINUS      &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp SINGLE_QUOTE
+&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp EXCL   &kp QUESTION   &none       &kp N7  &kp LS(EQUAL)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
+&trans            &trans            &trans             &trans     &trans         &trans      &trans  &trans                                                                          &trans
             >;
         };
 
@@ -179,10 +186,10 @@
 
         win-GWS {
             bindings = <
-&trans  &trans                &trans                &trans                &trans                                    &none       &none          &none              &none              &none
-&trans  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &trans                &trans  &none       &none                 &kp LC(N0)  &kp LC(LA(G))  &trans             &kp LC(LA(LS(G)))  &none
-&trans  &kp LA(LC(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans  &none       &kp N9                &none       &none          &kp LC(BACKSLASH)  &none              &none
-&trans  &trans                &trans                &trans                &trans  &trans      &kp LS(LA(NUMBER_5))  &trans                                                           &none
+&trans  &trans                &trans                &trans                &trans                                    &none       &none              &none              &none              &none
+&trans  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &trans                &trans  &none       &none                 &kp LC(N0)  &win_gslide_group  &trans             &kp LC(LA(LS(G)))  &none
+&trans  &kp LA(LC(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans  &none       &kp N9                &none       &none              &kp LC(BACKSLASH)  &none              &none
+&trans  &trans                &trans                &trans                &trans  &trans      &kp LS(LA(NUMBER_5))  &trans                                                               &none
             >;
         };
 
