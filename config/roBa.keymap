@@ -190,7 +190,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LS(X)  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LS(X)  &trans  &trans  &none   &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans     &trans                          &trans
             >;
         };
