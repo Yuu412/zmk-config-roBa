@@ -115,6 +115,13 @@
             bindings = <&kp LA(LG(NUMBER_1))>;
             label = "GDOCS_H1_MAC";
         };
+
+        chrome_previous_browser_tab: previous_browser_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(T))>;
+            label = "PREVIOUS_BROWSER_MAC";
+        };
     };
 
     behaviors {
@@ -211,10 +218,10 @@
 
         mac-ja-function {
             bindings = <
-&sb_ps           &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(D))  &kp LA(LC(F))  &kp LC(LA(G))  &kp LA(LC(RIGHT_ARROW))
-&screenshot_mac  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &trans                  &trans         &kp LA(SPACE)  &trans         &trans
-&kp LCTRL        &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8   &trans                  &trans         &trans         &trans         &trans
-&trans           &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                               &bluetooth_for_ja_mac
+&sb_ps           &kp F7  &kp F8  &kp F9  &kp F12                                                 &kp LA(LG(LEFT_ARROW))  &kp LC(LA(D))  &kp LA(LC(F))  &kp LC(LA(G))  &kp LA(LC(RIGHT_ARROW))
+&screenshot_mac  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader                   &trans                  &trans         &kp LA(SPACE)  &trans         &trans
+&kp LCTRL        &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8                  &trans                  &trans         &trans         &trans         &trans
+&trans           &trans  &trans  &trans  &trans   &trans           &chrome_previous_browser_tab  &trans                                                               &bluetooth_for_ja_mac
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
