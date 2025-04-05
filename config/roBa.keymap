@@ -108,6 +108,13 @@
             bindings = <&kp LS(LG(NUMBER_4))>;
             label = "SCREENSHOT_MAC";
         };
+
+        gdocs_h1_mac: gdocs_h1_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LG(NUMBER_1))>;
+            label = "GDOCS_H1_MAC";
+        };
     };
 
     behaviors {
@@ -175,10 +182,10 @@
 
         mac_ja_default {
             bindings = <
-&kp Q           &kp W      &kp E         &kp R        &kp T                                 &kp Y                    &kp U  &lt 0 I    &kp O    &kp P
-&kp A           &kp S      &kp D         &kp F        &kp G      &none       &trans         &kp H                    &kp J  &kp K      &kp L    &lt 6 ENTER
-&mt LEFT_WIN Z  &kp X      &kp C         &kp V        &kp B      &trans      &kp NUMBER_5   &kp N                    &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp LEFT_WIN    &kp LCTRL  &kp LEFT_ALT  &lt 6 SPACE  &lt 7 TAB  &mo 8       &kp BACKSPACE  &mt LEFT_WIN LANGUAGE_2                             &lt 8 ESCAPE
+&kp Q           &kp W      &kp E         &kp R        &kp T                                &kp Y                    &kp U  &lt 0 I    &kp O    &kp P
+&kp A           &kp S      &kp D         &kp F        &kp G      &none      &trans         &kp H                    &kp J  &kp K      &kp L    &lt 6 ENTER
+&mt LEFT_WIN Z  &kp X      &kp C         &kp V        &kp B      &mo 9      &kp NUMBER_5   &kp N                    &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp LEFT_WIN    &kp LCTRL  &kp LEFT_ALT  &lt 6 SPACE  &lt 7 TAB  &mo 8      &kp BACKSPACE  &mt LEFT_WIN LANGUAGE_2                             &lt 8 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -204,10 +211,10 @@
 
         mac-ja-function {
             bindings = <
-&sb_ps           &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
-&screenshot_mac  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &trans                  &kp LA(LG(G))           &kp LA(SPACE)         &kp LS(LA(LG(G)))        &trans
-&kp LCTRL        &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8   &trans                  &trans                  &trans                &trans                   &trans
-&trans           &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &bluetooth_for_ja_mac
+&sb_ps           &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(D))  &kp LA(LC(F))  &kp LC(LA(G))  &kp LA(LC(RIGHT_ARROW))
+&screenshot_mac  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &trans                  &trans         &kp LA(SPACE)  &trans         &trans
+&kp LCTRL        &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8   &trans                  &trans         &trans         &trans         &trans
+&trans           &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                               &bluetooth_for_ja_mac
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -215,10 +222,10 @@
 
         mac-ja-gws {
             bindings = <
-&trans  &trans                &trans                &trans                &trans                                    &none       &none              &none              &none              &none
-&trans  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &trans                &trans  &none       &none                 &kp LC(N0)  &win_gslide_group  &trans             &kp LC(LA(LS(G)))  &none
-&trans  &kp LA(LC(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans  &none       &kp N9                &none       &none              &kp LC(BACKSLASH)  &none              &none
-&trans  &trans                &trans                &trans                &trans  &trans      &kp LS(LA(NUMBER_5))  &trans                                                               &none
+&trans  &trans                &trans                &trans                &trans                                    &none       &none              &none              &none                &none
+&trans  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &trans                &trans  &none       &none                 &kp LC(N0)  &gslide_group_mac  &trans             &gslide_ungroup_mac  &none
+&trans  &gdocs_h1_mac         &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans  &none       &kp N9                &none       &none              &kp LC(BACKSLASH)  &none                &none
+&trans  &trans                &trans                &trans                &trans  &trans      &kp LS(LA(NUMBER_5))  &trans                                                                 &none
             >;
         };
 
