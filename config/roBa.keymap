@@ -66,7 +66,7 @@
             label = "BLUETOOTH_FOR_MAC";
         };
 
-        win_ps: win_ps {
+        sb_ps: win_ps {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&none &kp LS(B) &kp N5 &kp E &kp D &kp E &kp N6 &kp N4 &kp D &kp D &kp C>;
@@ -86,6 +86,27 @@
             bindings = <&bt BT_SEL 1>, <&macro_wait_time 100>, <&to 5>;
 
             label = "BLUETOOTH_FOR_JA_MAC";
+        };
+
+        gslide_group_mac: gslide_group_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(G))>;
+            label = "GSLIDE_GROUP_MAC";
+        };
+
+        gslide_ungroup_mac: gslide_ungroup_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LA(LS(G)))>;
+            label = "GSLIDE_UNGROUP_MAC";
+        };
+
+        screenshot_mac: screenshot_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            label = "SCREENSHOT_MAC";
         };
     };
 
@@ -183,10 +204,10 @@
 
         mac-ja-function {
             bindings = <
-&trans                &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
-&kp LS(LG(NUMBER_4))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(NUMBER_4))    &kp LA(LG(G))           &kp LA(SPACE)         &kp LS(LA(LG(G)))        &trans
-&kp LCTRL             &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8   &trans                  &trans                  &trans                &trans                   &trans
-&trans                &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &bluetooth_for_ja_mac
+&sb_ps           &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
+&screenshot_mac  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &trans                  &kp LA(LG(G))           &kp LA(SPACE)         &kp LS(LA(LG(G)))        &trans
+&kp LCTRL        &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8   &trans                  &trans                  &trans                &trans                   &trans
+&trans           &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &bluetooth_for_ja_mac
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -241,7 +262,7 @@
 
         win-FUNCTION {
             bindings = <
-&win_ps             &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LC(PERIOD))  &kp LA(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LA(LG(RIGHT_ARROW))  &trans
+&sb_ps              &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LC(PERIOD))  &kp LA(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LA(LG(RIGHT_ARROW))  &trans
 &kp LC(LA(DELETE))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(S))       &none                   &kp LA(L)    &none                    &trans
 &kp LG(L)           &kp F1  &kp F2  &kp F3  &kp F10  &none            &kp N8         &trans              &trans                  &trans       &trans                   &kp RSHIFT
 &trans              &trans  &trans  &trans  &trans   &trans           &kp LS(LC(T))  &trans                                                                            &bluetooth_for_mac
