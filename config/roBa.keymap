@@ -58,7 +58,7 @@
             label = "BLUETOOTH_FOR_WIN";
         };
 
-        bluetooth_for_mac: bluetooth_for_mac {
+        bluetooth_for_mac_en: bluetooth_for_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0>, <&macro_wait_time 100>, <&to 0>;
@@ -249,7 +249,7 @@
 &sb_ps           &kp F7  &kp F8  &kp F9  &kp F12                                                 &kp LA(LG(LEFT_ARROW))  &kp LC(LA(D))  &kp LA(LC(F))  &kp LC(LA(G))  &kp LA(LC(RIGHT_ARROW))
 &screenshot_mac  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader                   &trans                  &trans         &kp LA(SPACE)  &trans         &trans
 &kp LCTRL        &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8                  &trans                  &trans         &trans         &trans         &trans
-&trans           &trans  &trans  &trans  &trans   &trans           &chrome_previous_browser_tab  &trans                                                               &bluetooth_for_ja_mac
+&trans           &trans  &trans  &trans  &trans   &trans           &chrome_previous_browser_tab  &trans                                                               &bluetooth_for_mac_en
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -307,7 +307,7 @@
 &sb_ps              &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LC(PERIOD))  &kp LA(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LA(LG(RIGHT_ARROW))  &trans
 &kp LC(LA(DELETE))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(S))       &none                   &kp LA(L)    &none                    &trans
 &kp LG(L)           &kp F1  &kp F2  &kp F3  &kp F10  &none            &kp N8         &trans              &trans                  &trans       &trans                   &kp RSHIFT
-&trans              &trans  &trans  &trans  &trans   &trans           &kp LS(LC(T))  &trans                                                                            &bluetooth_for_mac
+&trans              &trans  &trans  &trans  &trans   &trans           &kp LS(LC(T))  &trans                                                                            &bluetooth_for_mac_en
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
