@@ -53,7 +53,7 @@
         bluetooth_for_win: bluetooth_for_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 100>, <&to 5>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 100>, <&to 6>;
 
             label = "BLUETOOTH_FOR_WIN";
         };
@@ -78,6 +78,14 @@
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp LA(G)>;
             label = "WIN_GSLIDE_GROUP";
+        };
+
+        bluetooth_for_ja_mac: bluetooth_for_ja_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 100>, <&to 5>;
+
+            label = "BLUETOOTH_FOR_JA_MAC";
         };
     };
 
@@ -129,7 +137,7 @@
 &trans                &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LG(LEFT_ARROW))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(UP_ARROW))  &kp LC(LA(RIGHT_ARROW))  &kp LA(LC(RIGHT_ARROW))
 &kp LS(LG(NUMBER_4))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(NUMBER_4))    &kp LA(LG(G))           &kp LA(SPACE)         &kp LS(LA(LG(G)))        &trans
 &kp LCTRL             &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_3   &trans                  &trans                  &trans                &trans                   &trans
-&trans                &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &bluetooth_for_win
+&trans                &trans  &trans  &trans  &trans   &trans           &kp LG(LS(T))  &trans                                                                                         &bluetooth_for_ja_mac
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -144,12 +152,23 @@
             >;
         };
 
+        mac_ja_default {
+            bindings = <
+&kp Q           &kp W      &kp E         &kp R        &kp T                                 &kp Y                    &kp U  &lt 0 I    &kp O    &kp P
+&kp A           &kp S      &kp D         &kp F        &kp G      &none       &trans         &kp H                    &kp J  &kp K      &kp L    &lt 1 ENTER
+&mt LEFT_WIN Z  &kp X      &kp C         &kp V        &kp B      &trans      &kp N0         &kp N                    &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp LEFT_WIN    &kp LCTRL  &kp LEFT_ALT  &lt 1 SPACE  &lt 2 TAB  &mo 3       &kp BACKSPACE  &mt LEFT_WIN LANGUAGE_2                             &lt 3 ESCAPE
+            >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+        };
+
         win-default {
             bindings = <
 &kp Q        &kp W         &kp E         &kp R        &kp T                                 &kp Y                 &kp U  &kp I      &kp O    &kp P
-&kp A        &kp S         &kp D         &kp F        &kp G      &mo 11      &none          &kp H                 &kp J  &kp K      &kp L    &lt 6 ENTER
-&mt LCTRL Z  &kp X         &kp C         &kp V        &kp B      &mo 9       &kp N5         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
-&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt 6 SPACE  &lt 7 TAB  &mo 8       &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 8 ESCAPE
+&kp A        &kp S         &kp D         &kp F        &kp G      &mo 12      &none          &kp H                 &kp J  &kp K      &kp L    &lt 7 ENTER
+&mt LCTRL Z  &kp X         &kp C         &kp V        &kp B      &mo 10      &kp N5         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt 7 SPACE  &lt 8 TAB  &mo 9       &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 9 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
