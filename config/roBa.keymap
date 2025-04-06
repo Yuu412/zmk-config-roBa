@@ -154,7 +154,7 @@
         gws_comment_mac: gws_comment_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(LS(M))>;
+            bindings = <&kp LG(LA(M))>;
             label = "GWS_COMMENT_MAC";
         };
     };
