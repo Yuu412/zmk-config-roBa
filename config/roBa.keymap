@@ -53,7 +53,7 @@
         bluetooth_for_win: bluetooth_for_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 100>, <&to 11>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 100>, <&to 11>;
 
             label = "BLUETOOTH_FOR_WIN";
         };
@@ -256,7 +256,7 @@
 &sb_ps           &kp F7  &kp F8  &kp F9  &kp F12                                                 &kp LA(LG(LEFT_ARROW))  &kp LC(LA(D))  &kp LA(LC(F))  &kp LC(LA(G))  &kp LA(LC(RIGHT_ARROW))
 &screenshot_mac  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader                   &trans                  &trans         &kp LA(SPACE)  &trans         &trans
 &kp LCTRL        &kp F1  &kp F2  &kp F3  &kp F10  &trans           &kp NUMBER_8                  &trans                  &trans         &trans         &trans         &trans
-&trans           &trans  &trans  &trans  &trans   &trans           &chrome_previous_browser_tab  &trans                                                               &bluetooth_for_mac_en
+&trans           &trans  &trans  &trans  &trans   &trans           &chrome_previous_browser_tab  &trans                                                               &bluetooth_for_win
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -284,7 +284,7 @@
             bindings = <
 &kp Q        &kp W         &kp E         &kp R         &kp T                                  &kp Y                 &kp U  &kp I      &kp O    &kp P
 &kp A        &kp S         &kp D         &kp F         &kp G       &mo 15      &none          &kp H                 &kp J  &kp K      &kp L    &lt 12 ENTER
-&mt LCTRL Z  &kp X         &kp C         &kp V         &kp B       &mo 8       &kp N5         &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
+&mt LCTRL Z  &kp X         &kp C         &kp V         &kp B       &mo 8       &kp A          &kp N                 &kp M  &kp COMMA  &kp DOT  &kp RIGHT_SHIFT
 &kp LCTRL    &kp LEFT_ALT  &kp LEFT_WIN  &lt 12 SPACE  &lt 13 TAB  &mo 14      &kp BACKSPACE  &mt LCTRL LANGUAGE_2                             &lt 14 ESCAPE
             >;
 
@@ -293,10 +293,10 @@
 
         win-NUM {
             bindings = <
-&kp LC(V)     &kp N7        &kp N8        &kp N9        &kp LS(LC(Z))                            &kp RC(R)       &kp RC(RG(LEFT))  &kp LG(TAB)     &kp RG(RC(RIGHT_ARROW))  &kp RC(F4)
-&kp LC(C)     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(Z)      &none       &none         &mkp MB5        &mkp MB1          &kp UP_ARROW    &mkp MB2                 &trans
-&mt LCTRL N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(A)      &none       &kp NUMBER_6  &mkp MB4        &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW          &trans
-&trans        &trans        &trans        &trans        &trans         &trans      &trans        &kp LANGUAGE_1                                                             &trans
+&kp LC(V)     &kp N7        &kp N8        &kp N9        &kp LS(LC(Z))                      &kp RC(R)       &kp RC(RG(LEFT))  &kp LG(TAB)     &kp RG(RC(RIGHT_ARROW))  &kp RC(F4)
+&kp LC(C)     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LC(Z)      &none       &none   &mkp MB5        &mkp MB1          &kp UP_ARROW    &mkp MB2                 &trans
+&mt LCTRL N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(A)      &none       &kp B   &mkp MB4        &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW          &trans
+&trans        &trans        &trans        &trans        &trans         &trans      &trans  &kp LANGUAGE_1                                                             &trans
             >;
         };
 
@@ -304,7 +304,7 @@
             bindings = <
 &kp LS(N5)        &kp LS(NUMBER_4)  &kp LS(NUMBER_6)   &kp MINUS  &kp LS(EQUAL)                      &kp LS(COMMA)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)         &kp LS(PERIOD)  &none
 &kp SLASH         &kp HASH          &kp DOUBLE_QUOTES  &kp COLON  &kp LS(MINUS)  &none       &trans  &kp MINUS      &kp LS(ASTERISK)       &kp LS(LEFT_PARENTHESIS)  &kp SEMICOLON   &kp SINGLE_QUOTE
-&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp EXCL   &kp QUESTION   &none       &kp N7  &kp LS(EQUAL)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
+&kp LEFT_BRACKET  &kp BACKSLASH     &kp LS(BACKSLASH)  &kp EXCL   &kp QUESTION   &none       &kp C   &kp LS(EQUAL)  &kp RIGHT_BRACKET      &kp BACKSLASH             &kp LS(N7)      &kp LS(NUMBER_2)
 &trans            &trans            &trans             &trans     &trans         &trans      &trans  &trans                                                                          &trans
             >;
         };
@@ -313,7 +313,7 @@
             bindings = <
 &sb_ps              &kp F7  &kp F8  &kp F9  &kp F12                                  &kp LA(LC(PERIOD))  &kp LA(LG(LEFT_ARROW))  &kp LG(TAB)  &kp LA(LG(RIGHT_ARROW))  &trans
 &kp LC(LA(DELETE))  &kp F4  &kp F5  &kp F6  &kp F11  &bootloader      &bootloader    &kp LS(LG(S))       &none                   &kp LA(L)    &none                    &trans
-&kp LG(L)           &kp F1  &kp F2  &kp F3  &kp F10  &none            &kp N8         &trans              &trans                  &trans       &trans                   &kp RSHIFT
+&kp LG(L)           &kp F1  &kp F2  &kp F3  &kp F10  &none            &kp D          &trans              &trans                  &trans       &trans                   &kp RSHIFT
 &trans              &trans  &trans  &trans  &trans   &trans           &kp LS(LC(T))  &trans                                                                            &bluetooth_for_mac_en
             >;
 
@@ -324,17 +324,17 @@
             bindings = <
 &trans  &trans                &trans                &trans                &trans                                    &none       &none              &none              &none              &none
 &trans  &kp LA(LC(NUMBER_4))  &kp LA(LC(N5))        &trans                &trans  &none       &none                 &kp LC(N0)  &win_gslide_group  &trans             &kp LC(LA(LS(G)))  &none
-&trans  &kp LA(LC(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans  &none       &kp N9                &none       &none              &kp LC(BACKSLASH)  &none              &none
+&trans  &kp LA(LC(NUMBER_1))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_3))  &trans  &none       &kp E                 &none       &none              &kp LC(BACKSLASH)  &none              &none
 &trans  &trans                &trans                &trans                &trans  &trans      &kp LS(LA(NUMBER_5))  &trans                                                               &none
             >;
         };
 
         win-SYMBOL-us {
             bindings = <
-&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp TILDE                            &kp LESS_THAN  &kp LBRC  &kp RIGHT_BRACE        &kp GREATER_THAN  &none
-&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans     &kp MINUS      &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
-&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &kp RS(D)  &kp UNDER      &kp LBKT  &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES
-&trans       &trans         &trans         &trans     &trans        &trans      &trans     &trans                                                            &trans
+&kp PERCENT  &kp DOLLAR     &kp AMPERSAND  &kp CARET  &kp TILDE                         &kp LESS_THAN  &kp LBRC  &kp RIGHT_BRACE        &kp GREATER_THAN  &none
+&kp SLASH    &kp POUND      &kp ASTRK      &kp PLUS   &kp EQUAL     &trans      &trans  &kp MINUS      &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp COLON
+&kp AT       &kp BACKSLASH  &kp PIPE       &kp EXCL   &kp QUESTION  &trans      &kp F   &kp UNDER      &kp LBKT  &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES
+&trans       &trans         &trans         &trans     &trans        &trans      &trans  &trans                                                            &trans
             >;
         };
     };
